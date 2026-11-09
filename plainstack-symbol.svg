@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs>
+ <linearGradient id="limeTop" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#B9FB05"/><stop offset="1" stop-color="#8DDB00"/></linearGradient>
+ <linearGradient id="greenSide" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#81D300"/><stop offset="1" stop-color="#4B9800"/></linearGradient>
+ <linearGradient id="blueFace" x1="0" x2=".8" y1="0" y2="1"><stop stop-color="#16C9FF"/><stop offset="1" stop-color="#0875E8"/></linearGradient>
+ <linearGradient id="coalFace" x1="0" x2="1" y1="0" y2=".8"><stop stop-color="#29343E"/><stop offset="1" stop-color="#0E1821"/></linearGradient>
+ <linearGradient id="creamFace" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#D6D6D0"/></linearGradient>
+</defs>
+<!-- left column shadow -->
+<path d="M22 72 L58 90 L69 86 L69 111 Q69 116 63 119 L57 122 Q53 124 49 122 L25 110 Q21 108 21 103 L21 73Z" fill="url(#coalFace)"/>
+<path d="M58 90 L69 86 L69 111 Q69 116 63 119 L57 122Z" fill="#10161C"/>
+<!-- right arm of P, warm off-white to remain distinguishable against white -->
+<path d="M68 64 L95 50 L113 58 L113 84 Q113 89 108 92 L69 114 L69 88 L95 73 L95 62 L68 78Z" fill="url(#creamFace)" stroke="#D5D5CE" stroke-width=".55" stroke-linejoin="round"/>
+<path d="M69 88 L95 73 L95 62 L113 58 L113 84 Q113 89 108 92 L69 114Z" fill="#E7E6E1" opacity=".72"/>
+<!-- left middle block in electric blue -->
+<path d="M21 62 Q21 58 26 56 L36 52 L69 67 L69 89 L59 95 Q56 97 52 95 L26 83 Q21 81 21 76Z" fill="url(#blueFace)"/>
+<path d="M21 63 L58 80 L69 75 L69 89 L59 95 Q56 97 52 95 L26 83 Q21 81 21 76Z" fill="#087DDC" opacity=".55"/>
+<path d="M21 62 Q21 58 26 56 L36 52 L69 67 L58 75Z" fill="#1FD1FF"/>
+<!-- upper lime block of P -->
+<path d="M27 37 Q27 33 33 30 L77 9 Q83 6 89 9 L109 20 Q114 23 114 29 L114 59 L96 49 L69 64 L69 72 L28 54 Q27 53 27 49Z" fill="url(#greenSide)"/>
+<path d="M27 37 Q27 33 33 30 L77 9 Q83 6 89 9 L109 20 Q113 22 114 27 L69 53Z" fill="url(#limeTop)"/>
+<path d="M27 37 L69 53 L69 72 L28 54 Q27 53 27 49Z" fill="#8CDB00"/>
+<path d="M69 53 L114 27 L114 59 L96 49 L69 64Z" fill="url(#greenSide)"/>
+</svg>

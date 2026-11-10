@@ -1,1 +1,21 @@
-{"name":"Plainstack","short_name":"Plainstack","description":"More life. Less noise.","start_url":"/","display":"browser","background_color":"#f5f5ef","theme_color":"#f5f5ef","icons":[{"src":"assets/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"assets/icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+  "name": "Plainstack",
+  "short_name": "Plainstack",
+  "description": "Plainstack: independent R&D and original product development in Physical AI, robotics, intelligent hardware and software.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f5f5ef",
+  "theme_color": "#f5f5ef",
+  "icons": [
+    {
+      "src": "assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

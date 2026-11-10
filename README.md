@@ -1,46 +1,43 @@
-# Plainstack — updated website
+# Plainstack — R&D + Original Products Website
 
-A complete, responsive, static rebuild of the Plainstack public homepage, using the new geometric stacked-P logo.
+Version: 10 November 2026
 
-## What is included
-- `index.html` — semantic full-page site: hero, philosophy, curiosity, products, lab, beyond the screen, independence, footer
-- `styles.css` — mobile-first responsive styling, animations, reduced-motion support
-- `main.js` — mobile navigation, scroll reveals and current year
-- `assets/logo-light.svg` — header logo for light background
-- `assets/logo-dark.svg` — footer logo for dark background
-- `assets/symbol.svg` — large brand symbol
-- `assets/favicon.ico`, PNG icons — browser and phone icons
-- `assets/social-preview.png` — Open Graph preview image
-- `site.webmanifest`, `robots.txt`, `sitemap.xml` — web metadata
-- `previews/desktop.png`, `previews/mobile.png` — local visual screenshots
+This is the **complete responsive static website package** based on the previously approved Plainstack site. It preserves the **exact existing Plainstack SVG logo**, favicon assets, brand palette, typography, animations, page layout and product-block visuals. There are no school-project images or advertising for client services.
+
+## Brand and content updates
+
+- Independent research, development and product company (Chennai, India)
+- Original physical and digital products — not services
+- Four research/product focus areas: Physical AI & humanoid robotics; intelligent devices and electronics; original software & applied AI; in-house 3D design and product manufacturing
+- Clearly labelled **research directions**, not commercial products
+- Product lifecycle: **Research → Design → Prototype → Validate → Manufacture → Sell**
+- Explicitly excludes client software/AI services, custom 3D printing and commissioned projects
+- Updated homepage metadata and social-sharing preview
+
+## Files
+
+- `index.html`: the complete accessible homepage
+- `styles.css`: responsive CSS and Plainstack theme
+- `main.js`: mobile navigation, scroll reveals and automatic year
+- `assets/`: original unmodified SVG logo and browser icons, updated social preview
+- `site.webmanifest`, `robots.txt`, `sitemap.xml`: metadata
+- `DEPLOY.md`: how to publish
+- `previews/`: desktop and mobile screenshots of the updated site
 
 ## Preview locally
-From the directory containing `index.html` run:
 
-```sh
+Start a web server in the extracted folder:
+
+```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000`. You can also double-click `index.html` for a basic offline preview; serving the folder locally is recommended for the most reliable behavior.
+Then visit `http://localhost:8000`.
 
-## Deploy
-This is a self-contained static site with no build process.
+No npm, package manager or build step is required. Google Fonts are requested by the web page; safe local fallback fonts are specified in CSS. No third-party analytics are included.
 
-- **Netlify**: drag the website folder to the Netlify deploy area (or connect it to a repository).
-- **Vercel**: import a repository with this folder at the root; choose "Other" framework; no build command; output directory `.`.
-- **GitHub Pages**: publish the files from your configured root and retain the `.nojekyll` file. The site already uses relative asset paths, so it can also be published under a project subpath.
-- **Traditional web hosting**: upload all root files and the `assets` folder into the site's document root (often `public_html/`).
+## Deployment state
 
-The previous site must be backed up before replacing it. DNS and domain settings do not need to change if the current hosting service is kept.
+The ZIP is **ready to deploy** but has **not** been uploaded to `plainstack.tech`. You will need to upload the files through your site's existing hosting provider or source repository. Keep the original site's backup.
 
-## Edit brand content
-- Hero and other text: `index.html`
-- Colors: variables at the top of `styles.css`
-- Logos: replace SVG files in `assets/`, maintaining the same filenames.
-- Social sharing image: `assets/social-preview.png`
-
-## Important notes
-- The published website at `plainstack.tech` has **not** been changed. This package is a rebuild from publicly accessible homepage content, not an edit to an unseen source repository.
-- No email address, product launch date, prices, store, or social media URL was invented.
-- Google Fonts are optional: system font fallbacks are defined. The page otherwise has no runtime third-party dependencies or analytics.
-- Verify any platform-specific deployment requirements against your host.
+The public site's hosting/deployment configuration is unknown, so these files are a portable static-site update, not a live code push.

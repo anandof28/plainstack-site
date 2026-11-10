@@ -1,13 +1,12 @@
-# Deploy Plainstack to plainstack.tech
+# Publish Plainstack R&D website to plainstack.tech
 
-1. **Back up your existing website and its configuration.**
-2. Open `index.html` in your browser and review the copy, layout and logo.
-3. Keep these files together: `index.html`, `styles.css`, `main.js`, `assets/`, `site.webmanifest`, `robots.txt`, and `sitemap.xml`.
-4. Upload the files to the current host's site root, or deploy the folder as a static site to your preferred host.
-5. Make sure your custom domain `plainstack.tech` is configured in that host and HTTPS is working. Avoid touching DNS if reusing the current hosting project.
-6. Test mobile navigation, page anchor links, the favicon, and `https://plainstack.tech/assets/social-preview.png`.
-7. Clear your CDN/browser cache if the old logo still appears.
+1. Back up your existing website and hosting configuration.
+2. Extract `plainstack-rd-website-v2.zip`. The files are inside the `plainstack-rd-website-v2/` folder.
+3. Upload the **contents** of that folder (`index.html`, `styles.css`, `main.js`, `assets/`, etc.) to the website root, or deploy the folder with your current Git-based host.
+4. Keep the current domain and DNS configuration unless changing hosting providers.
+5. Check these URLs: `https://plainstack.tech/`, `https://plainstack.tech/assets/logo-light.svg`, `https://plainstack.tech/assets/social-preview.png`.
+6. Verify the mobile navigation, product direction cards, accessibility and favicon. Clear the CDN cache if old content persists.
 
-There are **no build or install commands**. The files can be hosted as-is.
+**Hosting examples:** Netlify supports drag-and-drop static-folder deploys; Vercel can deploy a static repository with output at root; GitHub Pages can publish from a branch/folder; conventional hosting accepts files at its document root. Follow the method used for your current site.
 
-**Important:** This is a complete new static rebuild based on the public homepage, not an in-place update to your existing source repository. It has not been published to your live domain.
+**No production update was performed in this conversation.** Publishing requires access to the website's host or code repository.

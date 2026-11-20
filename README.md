@@ -40,3 +40,15 @@ For Netlify/Vercel, this is a plain static site; no build command or node depend
 ## Fonts and privacy
 
 The site works offline with system fonts. If the browser is online, `styles.css` additionally loads Manrope and DM Sans through Google Fonts. There are no analytics, ad pixels, backend services, external JavaScript, API keys, or client form submissions.
+
+
+## Mobile layout update (20 November 2026)
+
+The CSS includes viewport overflow protection and mobile-specific footer/button reflow.
+It preserves existing site content and brand assets while preventing long footer
+links, grid children, and decorative art from stretching the page on small screens.
+Tested in Chromium layouts at 320px through desktop widths.
+
+**Publishing:** This is a complete drop-in static website. Deploy the contents of
+`plainstack-ai-first-website/` to your existing GitHub Pages repository root.
+Do not upload the containing folder itself. GitHub Pages will publish on `main`.

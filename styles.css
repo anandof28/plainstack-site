@@ -10,3 +10,39 @@
 @media(max-width:700px){.container{width:calc(100% - 42px)}.top-strip{height:29px}.strip-content{font-size:8px;letter-spacing:.75px}.strip-content>span:last-child{display:none}.nav-row{height:71px}.brand{font-size:25px;letter-spacing:-1.8px}.brand img{width:39px;height:39px}.hero-layout{padding:66px 0 46px}.hero h1{font-size:clamp(41px,9.6vw,68px);letter-spacing:-.078em;margin-top:28px}.hero-description{font-size:15px;margin-top:27px}.hero-actions{gap:22px;margin-top:26px}.button{padding:15px 17px;gap:18px}.hero-footer{gap:13px;padding-top:24px;font-size:9px}.hero-footer-rule{margin-inline:6px}.hero-visual{height:455px}.orb-one{width:390px;height:390px}.orb-two{width:300px;height:300px}.visual-stage{max-width:390px;transform:rotate(-2deg)}.visual-heading{padding:13px 14px;font-size:7px}.visual-identity{padding:19px 15px 11px;gap:12px}.identity-icon{width:76px;height:76px}.identity-icon img{width:69px}.visual-identity strong{font-size:24px}.visual-kicker{font-size:7px}.visual-process{margin:9px 14px 14px;padding:8px 10px}.process-node{padding:9px 0;gap:8px}.process-line{left:26px}.process-number{width:32px;height:32px}.process-node strong{font-size:10px}.process-node small{font-size:8px}.process-status{font-size:7px}.visual-footer{padding:12px 15px;font-size:7px}.float-label{font-size:7px;padding:11px}.float-top{top:20px;right:1px}.float-bottom{bottom:0;left:0}.hero-bottom-line{font-size:7px;letter-spacing:1px;padding:18px 0}.ticker{height:47px}.ticker-inner{gap:24px}.ticker-inner>span:not(.ticker-star){font-size:9px}.section{padding:78px 0 86px}.section-meta{font-size:8px;letter-spacing:.7px;gap:10px}.section-meta>span:last-child{text-align:right}.display-heading{font-size:clamp(44px,10vw,65px)}.philosophy-grid{padding:52px 0}.asterisk{font-size:38px;margin-bottom:23px}.philosophy-aside>p:not(.lead){font-size:14px}.lead{font-size:22px}.belief-row{justify-content:start;font-size:8px;letter-spacing:1px;padding:20px 0}.ai-heading-row,.products-top,.lab-head{margin:51px 0 38px}.mini-kicker{font-size:9px}.ai-heading-row .display-heading,.products-top .display-heading{font-size:clamp(42px,9vw,66px)}.section-lead{font-size:14px}.ai-pillars{grid-template-columns:1fr;gap:9px}.pillar{min-height:unset;padding:24px}.pillar-illustration{height:160px}.pillar h3{font-size:27px;margin-top:6px}.pillar p{font-size:13px;margin-top:11px}.pillar-bottom{margin-top:26px}.ai-reminder{padding:24px;gap:13px;align-items:start}.reminder-icon{font-size:27px}.ai-reminder p{font-size:13px}.reminder-arrow{display:none}.work-section{padding:82px 0}.work-layout h2{font-size:clamp(45px,9.5vw,65px)}.work-layout>div:first-child>p{font-size:14px}.work-flow{padding:10px 17px}.flow-row{padding:19px 0;gap:12px}.flow-id{width:33px;height:33px;font-size:9px}.flow-row strong{font-size:14px}.flow-row small{font-size:10px}.flow-tag{font-size:7px;max-width:80px;white-space:normal}.product-grid{grid-template-columns:1fr;gap:15px}.product-info{min-height:285px;padding:26px 23px}.product-top{font-size:9px}.status-pill{font-size:8px;padding:7px}.product-info h3{font-size:47px;margin-top:37px}.product-info>p{font-size:13px}.cleaner-art,.invent-art{height:330px}.app-window{width:min(83%,390px)}.lab-grid{grid-template-columns:1fr}.lab-visual{min-height:390px}.lab-orbit{width:290px;height:290px}.orbit-two{width:222px;height:222px}.orbit-three{width:165px;height:165px}.lab-visual img{width:149px}.lab-direction{grid-template-columns:33px 1fr 15px;gap:12px;padding:25px 0}.lab-direction h3{font-size:20px}.lab-direction p{font-size:12px}.approach-layout{grid-template-columns:1fr;gap:43px;padding-top:53px}.approach-layout>div:first-child>p{font-size:14px;margin-top:25px}.approach-card strong{font-size:22px}.closing-content{padding:85px 0}.closing-symbol{font-size:50px}.closing h2{font-size:clamp(43px,9.7vw,66px)}.closing-note{margin-top:49px}.footer{padding:54px 0 26px}.footer-top{flex-direction:column;gap:45px;padding-bottom:51px}.footer-links{gap:63px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:15px;font-size:8px}}
 @media(max-width:390px){.container{width:calc(100% - 34px)}.hero h1{font-size:clamp(37px,10vw,43px)}.hero-actions{gap:20px}.button-underlined{font-size:11px}.hero-visual{height:420px}.visual-stage{width:95%}.float-bottom{bottom:6px}.float-top{right:-3px}.hero-footer-rule{display:none}.app-main{padding:23px 16px}.app-main h4{font-size:23px}.wheel-one{left:calc(50% - 128px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.js-enabled .reveal{opacity:1;transform:none}}
+
+
+/* PLAINSTACK MOBILE LAYOUT HARDENING — 2026-11-20 */
+/* Keep Safari's layout viewport stable, even around animated/off-canvas art. */
+html, body { width:100%; max-width:100%; overflow-x:clip; }
+main, header, footer, section { max-width:100%; min-width:0; }
+.container { max-width:1312px; min-width:0; }
+/* Flex/grid children must be allowed to shrink instead of widening the document. */
+.nav-row > *, .hero-layout > *, .hero-copy, .hero-visual,
+.philosophy-grid > *, .ai-heading-row > *, .products-top > *,
+.product-tile, .product-info, .lab-grid > *, .approach-layout > *,
+.footer-top > *, .footer-links, .footer-links > div { min-width:0; }
+.footer-top > div:first-child { max-width:100%; }
+.footer-brand { max-width:100%; }
+.footer-brand span { min-width:0; }
+.closing-actions { max-width:100%; display:flex; justify-content:center; }
+.closing-actions .button { max-width:100%; min-width:0; text-align:center; white-space:normal; }
+.footer-links a, .footer-bottom span { overflow-wrap:anywhere; }
+@media (max-width:700px) {
+  .footer-top { width:100%; gap:34px; }
+  .footer-links { width:100%; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(16px,6vw,40px); row-gap:30px; }
+  .footer-links > div { min-width:0; gap:16px; }
+  .footer-links a { max-width:100%; line-height:1.5; }
+  .footer-bottom { width:100%; gap:15px; line-height:1.6; }
+  .footer-brand { font-size:clamp(21px,6vw,27px); }
+  .closing { width:100%; overflow:clip; }
+  .closing-content { padding-inline:0; }
+  .closing h2 { overflow-wrap:normal; }
+  .closing .button { font-size:clamp(11px,3.2vw,14px); gap:14px; }
+}
+@media (max-width:380px) {
+  .footer-links { column-gap:14px; }
+  .footer-top > div:first-child > p { font-size:13px; }
+  .closing h2 { font-size:clamp(39px,10.8vw,45px); }
+  .closing-actions .button { padding:14px 16px; }
+}

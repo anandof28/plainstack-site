@@ -1,43 +1,42 @@
-# Plainstack — R&D + Original Products Website
+# Plainstack — Complete AI-first Website
 
-Version: 10 November 2026
+A complete, responsive static marketing website for Plainstack, built November 2026.
 
-This is the **complete responsive static website package** based on the previously approved Plainstack site. It preserves the **exact existing Plainstack SVG logo**, favicon assets, brand palette, typography, animations, page layout and product-block visuals. There are no school-project images or advertising for client services.
+## Included
 
-## Brand and content updates
+- `index.html` — full accessible single-page website with metadata and structured data.
+- `styles.css` — entire design system, illustrations, responsive breakpoints, and reduced-motion support.
+- `script.js` — mobile navigation, scroll reveals, active nav state, dynamic footer year.
+- `assets/` — Plainstack's original multicolor P symbol recreated **exactly from the public GitHub source**, browser icons, and social preview.
+- `previews/` — screenshots of the generated site at desktop and mobile widths.
+- `robots.txt`, `sitemap.xml`, `site.webmanifest` and `.nojekyll` — static deployment support.
 
-- Independent research, development and product company (Chennai, India)
-- Original physical and digital products — not services
-- Four research/product focus areas: Physical AI & humanoid robotics; intelligent devices and electronics; original software & applied AI; in-house 3D design and product manufacturing
-- Clearly labelled **research directions**, not commercial products
-- Product lifecycle: **Research → Design → Prototype → Validate → Manufacture → Sell**
-- Explicitly excludes client software/AI services, custom 3D printing and commissioned projects
-- Updated homepage metadata and social-sharing preview
+## Content principles
 
-## Files
-
-- `index.html`: the complete accessible homepage
-- `styles.css`: responsive CSS and Plainstack theme
-- `main.js`: mobile navigation, scroll reveals and automatic year
-- `assets/`: original unmodified SVG logo and browser icons, updated social preview
-- `site.webmanifest`, `robots.txt`, `sitemap.xml`: metadata
-- `DEPLOY.md`: how to publish
-- `previews/`: desktop and mobile screenshots of the updated site
+- AI-first is the **operating model**; people remain responsible for product direction, judgment, quality, and security.
+- AI-first does **not** mean every Plainstack product requires AI.
+- Plainstack develops its **own original products**, not commissioned services.
+- Clutterwell is shown **in development**, InventLab is shown **launching soon**.
+- No invented sale dates, testimonials, customer counts, or financial claims.
 
 ## Preview locally
 
-Start a web server in the extracted folder:
+Start a local web server from this directory:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Visit `http://localhost:8000`.
 
-No npm, package manager or build step is required. Google Fonts are requested by the web page; safe local fallback fonts are specified in CSS. No third-party analytics are included.
+## Deploy
 
-## Deployment state
+For a GitHub Pages workflow publishing `main`, copy the site files **into the repository root**, replacing the existing HTML/CSS/JS as needed (the new JS entrypoint is `script.js`). Commit and push after reviewing the site. The existing `.github/workflows/static.yml` in your repository should be kept unchanged; pushing to `main` triggers your existing Pages deployment. Keep your current domain/DNS configuration.
 
-The ZIP is **ready to deploy** but has **not** been uploaded to `plainstack.tech`. You will need to upload the files through your site's existing hosting provider or source repository. Keep the original site's backup.
+For Netlify/Vercel, this is a plain static site; no build command or node dependencies are needed.
 
-The public site's hosting/deployment configuration is unknown, so these files are a portable static-site update, not a live code push.
+**This ZIP is a new website, not a GitHub commit or live deployment.**
+
+## Fonts and privacy
+
+The site works offline with system fonts. If the browser is online, `styles.css` additionally loads Manrope and DM Sans through Google Fonts. There are no analytics, ad pixels, backend services, external JavaScript, API keys, or client form submissions.
